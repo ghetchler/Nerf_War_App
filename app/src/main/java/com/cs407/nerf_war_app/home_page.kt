@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -17,7 +17,14 @@ class home_page : AppCompatActivity() {
         // Set up the toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)  // Set the Toolbar as the app's action bar
+
+        val createGameButton = findViewById<Button>(R.id.create_game_button)
+        createGameButton.setOnClickListener {
+            val intent = Intent(this, GameCreationActivity::class.java)
+            startActivity(intent)
+        }
     }
+
     // Inflate the menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.home_page_menu, menu)  // Inflate the menu from home_page_menu.xml

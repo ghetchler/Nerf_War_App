@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740968726952",
+    "project_id": "nerfwarapp1",
+    "storage_bucket": "nerfwarapp1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740968726952:android:5337dce0c356f616649d9d",
+        "android_client_info": {
+          "package_name": "com.cs407.nerf_war_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ9GzGA3-YKprkrYdmfW3C7S8fUV5hz4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

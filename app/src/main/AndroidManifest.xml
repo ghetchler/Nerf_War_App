@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -12,12 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nerf_War_App"
         tools:targetApi="31">
-        <activity
-            android:name=".create_user_page"
-            android:exported="false" />
-        <activity
-            android:name=".home_page"
-            android:exported="false" />
+
+        <!-- Main Activity (Entry Point) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,6 +24,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Create User Activity -->
+        <activity
+            android:name=".create_user_page"
+            android:exported="false" />
+
+        <!-- Home Page Activity -->
+        <activity
+            android:name=".home_page"
+            android:exported="false" />
+
+        <!-- Game Creation Activity -->
+        <activity
+            android:name=".GameCreationActivity"
+            android:exported="false" />
+
+        <!-- Game Details Activity -->
+        <activity
+            android:name=".GameDetailsActivity"
+            android:exported="false" />
+
+        <!-- Game HUD Activity -->
+        <activity
+            android:name=".GameHUDActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
